@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="625.0" prefWidth="1120.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication7.Main_controller">
+   <children>
+      <TabPane layoutY="271.0" prefHeight="350.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Выборка 1">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tableUsers" layoutX="3.0" layoutY="8.0" prefHeight="311.0" prefWidth="600.0">
+                          <columns>
+                            <TableColumn fx:id="grupsColumn" prefWidth="75.0" text="grups" />
+                            <TableColumn fx:id="fioColumn" prefWidth="75.0" text="Fio" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Выборка 2 ">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tablePrepodMark" layoutX="7.0" layoutY="14.0" prefHeight="299.0" prefWidth="600.0">
+                          <columns>
+                            <TableColumn fx:id="fio_studColumn" prefWidth="75.0" text="Fio" />
+                            <TableColumn fx:id="markColumn" prefWidth="117.0" text="mark" />
+                            <TableColumn fx:id="predmetColumn" prefWidth="117.0" text="predmet" />
+                            <TableColumn fx:id="teacherColumn" prefWidth="75.0" text="teacher" />                          
+                          </columns>
+                        </TableView>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Выборка 3 ">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tableTelefone" layoutX="7.0" layoutY="14.0" prefHeight="299.0" prefWidth="593.0">
+                          <columns>
+                            <TableColumn fx:id="fio_stud_foneColumn" prefWidth="75.0" text="Fio" />
+                            <TableColumn fx:id="telefoneColumn" prefWidth="117.0" text="Telofone" />  
+                            <TableColumn fx:id="grups_nameColumn" prefWidth="75.0" text="Fio" />                        
+                          </columns>
+                        </TableView>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Выборка 4 ">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tablePredmet_prepod" layoutX="7.0" layoutY="14.0" prefHeight="299.0" prefWidth="593.0">
+                          <columns>
+                            <TableColumn fx:id="predmet_nameColumn" prefWidth="117.0" text="Telofone" />  
+                            <TableColumn fx:id="prepod_nameColumn" prefWidth="75.0" text="Fio" />                        
+                          </columns>
+                        </TableView>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <TabPane layoutY="-1.0" prefHeight="270.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Студенты ">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="241.0" prefWidth="579.0">
+                     <children>
+                        <Button fx:id="button_add_1" layoutX="55.0" layoutY="202.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Добавить " />
+                        <TextField id="Fio" fx:id="textfield_fio_1" layoutX="57.0" layoutY="14.0" />
+                        <Text layoutX="6.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fio" />
+                        <TextField id="Grups" fx:id="textfield_grups_1" layoutX="57.0" layoutY="47.0" prefHeight="25.0" prefWidth="149.0" />
+                        <Text layoutX="6.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grups" />
+                        <TextField id="Birthday" fx:id="textfield_birthday_1" layoutX="57.0" layoutY="83.0" prefHeight="25.0" prefWidth="149.0" />
+                        <TextField id="Telfone" fx:id="textfield_tel_1" layoutX="57.0" layoutY="121.0" prefHeight="25.0" prefWidth="149.0" />
+                        <Text layoutX="8.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Birthday" />
+                        <Text layoutX="7.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="tel" />
+                        <TextField id="Nzach" fx:id="textfield_nzach_1" layoutX="57.0" layoutY="157.0" prefHeight="25.0" prefWidth="149.0" />
+                        <Text layoutX="10.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nzach" />
+                        
+                        <TableView fx:id="table_stud_select" layoutX="227.0" layoutY="27.0" prefHeight="169.0" prefWidth="370.0">
+                           <columns>
+                              <TableColumn fx:id="fio" prefWidth="75.0" text="fio" />
+                              <TableColumn fx:id="idgr" prefWidth="75.0" text="idgr" />
+                              <TableColumn fx:id="telefone" prefWidth="75.0" text="telefone" />
+                              <TableColumn fx:id="birthday" prefWidth="75.0" text="birthday" />
+                              <TableColumn fx:id="nzach" prefWidth="75.0" text="nzach" />
+                           </columns>
+                        </TableView>
+                        <Text layoutX="386.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Студенты" />
+                        <Button fx:id="change_record" layoutX="310.0" layoutY="202.0" mnemonicParsing="false" text="Выбрать для изменения " />
+                        <Button fx:id="delete_record" layoutX="522.0" layoutY="202.0" mnemonicParsing="false" text="Удалить " />
+                        <Button fx:id="change_record_confirm" layoutX="224.0" layoutY="202.0" mnemonicParsing="false" text="Изменить  " />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Группы">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="table_grups_select" layoutX="256.0" layoutY="14.0" prefHeight="183.0" prefWidth="330.0">
+                          <columns>
+                            <TableColumn fx:id="grups_idgr" prefWidth="75.0" text="idgr" />
+                            <TableColumn fx:id="grups_name" prefWidth="75.0" text="grup_name" />
+                          </columns>
+                        </TableView>
+                        <TextField fx:id="textfield_idgr_table_grups" layoutX="89.0" layoutY="14.0" />
+                        <TextField fx:id="textfield_grups_name_table_grups" layoutX="89.0" layoutY="69.0" />
+                        <Button fx:id="add_table_grups" layoutX="55.0" layoutY="121.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Добавить" />
+                        <Label layoutX="34.0" layoutY="18.0" text="idgr" />
+                        <Label layoutX="14.0" layoutY="73.0" text="Grup_name" />
+                        <Button fx:id="change_table_grups_confirm" layoutX="254.0" layoutY="203.0" mnemonicParsing="false" text="Изменить" />
+                        <Button fx:id="change_table_grups" layoutX="332.0" layoutY="203.0" mnemonicParsing="false" text="Выбрать для изменения " />
+                        <Button fx:id="delete_record_table_grups" layoutX="522.0" layoutY="203.0" mnemonicParsing="false" text="Удалить " />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+           <Tab text="Оценки">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="table_marks_select" layoutX="219.0" prefHeight="200.0" prefWidth="381.0">
+                          <columns>
+                            <TableColumn fx:id="marks_nzach" prefWidth="75.0" text="nzach" />
+                            <TableColumn fx:id="marks_idprepod" prefWidth="75.0" text="Prepod" />
+                            <TableColumn fx:id="marks_idpredmet" prefWidth="75.0" text="Predmet" />
+                            <TableColumn fx:id="marks_mark" prefWidth="75.0" text="mark" />
+                            <TableColumn fx:id="marks_data" prefWidth="75.0" text="data" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="marks_change_record_confirm" layoutX="254.0" layoutY="202.0" mnemonicParsing="false" text="Изменить" />
+                        <Button fx:id="marks_change_record" layoutX="342.0" layoutY="202.0" mnemonicParsing="false" text="Выбрать для изменения" />
+                        <Button fx:id="marks_delete_record" layoutX="534.0" layoutY="202.0" mnemonicParsing="false" text="Удалить" />
+                        <TextField fx:id="marks_textfield_nzach" layoutX="55.0" layoutY="14.0" />
+                        <TextField fx:id="marks_textfield_idprepod" layoutX="55.0" layoutY="51.0" />
+                        <TextField fx:id="marks_textfield_idpredmet" layoutX="55.0" layoutY="88.0" />
+                        <TextField fx:id="marks_textfield_mark" layoutX="55.0" layoutY="121.0" />
+                        <TextField fx:id="marks_textfield_data" layoutX="55.0" layoutY="157.0" />
+                        <Label layoutX="8.0" layoutY="18.0" text="Nzach" />
+                        <Label layoutX="5.0" layoutY="55.0" text="Prepod" />
+                        <Label layoutX="2.0" layoutY="92.0" text="Predmet" />
+                        <Label layoutX="10.0" layoutY="125.0" text="mark" />
+                        <Label layoutX="12.0" layoutY="161.0" text="data" />
+                        <Button fx:id="marks_add_record" layoutX="55.0" layoutY="190.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Добавить" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Предметы">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="table_predmet_select" layoutX="240.0" layoutY="6.0" prefHeight="191.0" prefWidth="342.0">
+                          <columns>
+                            <TableColumn fx:id="predmet_idpredmet" prefWidth="73.0" text="idpredmet" />
+                            <TableColumn fx:id="predmet_name" prefWidth="158.0" text="predmet_name" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="predmet_delete_record" layoutX="518.0" layoutY="202.0" mnemonicParsing="false" text="Удалить " />
+                        <Button fx:id="predmet_change_record_confirm" layoutX="240.0" layoutY="202.0" mnemonicParsing="false" text="Изменить" />
+                        <Button fx:id="predmet_change_record" layoutX="313.0" layoutY="202.0" mnemonicParsing="false" text="Выбрать для изменения " />
+                        <TextField fx:id="predmet_textfield_idpredmet" layoutX="76.0" layoutY="14.0" />
+                        <TextField fx:id="predmet_textfield_predmet_name" layoutX="76.0" layoutY="53.0" />
+                        <Label layoutX="10.0" layoutY="18.0" text="idpredmet" />
+                        <Label layoutX="6.0" layoutY="57.0" text="Predmet_fio" />
+                        <Button fx:id="predmet_add_record" layoutX="76.0" layoutY="89.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Добавить" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Преподователи">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="table_prepod_select" layoutX="267.0" layoutY="7.0" prefHeight="194.0" prefWidth="310.0">
+                          <columns>
+                            <TableColumn fx:id="prepod_idprepod" prefWidth="76.0" text="idprepod" />
+                            <TableColumn fx:id="prepod_fio" prefWidth="130.0" text="fio" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="prepod_change_record_confirm" layoutX="266.0" layoutY="207.0" mnemonicParsing="false" text="Изменить" />
+                        <Button fx:id="prepod_change_record" layoutX="348.0" layoutY="207.0" mnemonicParsing="false" text="Выбрать для изменения" />
+                        <Button fx:id="prepod_add_record" layoutX="92.0" layoutY="114.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Добавить" />
+                        <Button fx:id="prepod_delete_record" layoutX="525.0" layoutY="207.0" mnemonicParsing="false" text="Удалить" />
+                        <TextField fx:id="prepod_textfield_idprepod" layoutX="92.0" layoutY="14.0" />
+                        <TextField fx:id="prepod_textfield_prepod_fio" layoutX="92.0" layoutY="56.0" />
+                        <Label layoutX="14.0" layoutY="18.0" text="idprepod" />
+                        <Label layoutX="14.0" layoutY="60.0" text="prepod_fio" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Button id="Launch_database" fx:id="Launch_database" layoutX="621.0" layoutY="574.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Launch_database" />
+      <Label layoutX="803.0" layoutY="414.0" text="Количество человек в группе" />
+      <BarChart fx:id="chart" layoutX="613.0" layoutY="14.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" fx:id="xAxis" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Button fx:id="reload_chart" layoutX="1050.0" layoutY="434.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="57.0" text="Reload" />
+      <Button layoutX="1024.0" layoutY="574.0" mnemonicParsing="false" text="Экспорт в эксель" fx:id="Export"/>
+   </children>
+</AnchorPane>

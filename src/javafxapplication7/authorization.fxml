@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="189.0" prefWidth="279.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication7.avthorization_controller">
+   <children>
+      <Label layoutX="54.0" layoutY="50.0" text="Login" />
+      <Label layoutX="54.0" layoutY="102.0" text="pass" />
+      <PasswordField fx:id="pass_field" layoutX="95.0" layoutY="98.0" />
+      <TextField fx:id="login_field" layoutX="95.0" layoutY="46.0" />
+      <Button fx:id="authorization_button" layoutX="96.0" layoutY="150.0" mnemonicParsing="false" text="Authorization" />
+      <Label layoutX="96.0" layoutY="123.0" fx:id="warning" />
+   </children>
+</AnchorPane>
